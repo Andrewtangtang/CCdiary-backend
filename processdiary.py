@@ -98,12 +98,12 @@ class DiaryFeedback:
         response1 = re.sub(r'\n+', '\n', response1)
         if language == "Traditional Chinese":
             if "健康" in response2 or "正" in response2:
-                return response1+'\n'+"心靈狀態健康"
+                return response1+'\n\n'+"心靈狀態健康"
             else:
-                return response1+'\n'+'潛在的風險:'+response2
+                return response1+'\n\n'+'潛在的風險:'+response2
         else:
             if "healthy" in response2 or "positive" in response2:
-                return response1+'\n'+"your mental state is healthy."
+                return response1+'\n\n'+"your mental state is healthy."
             else:
-                return response1+'\n'+'potential disease:'+response2
+                return response1+'\n\n'+'potential disease:'+response2
 
