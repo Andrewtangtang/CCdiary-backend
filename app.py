@@ -1,8 +1,12 @@
-from flask import Flask, request, jsonify
+import json
+
+from flask import Flask, request, jsonify,Response
 from processdiary import DiaryFeedback
 from diseasechatbot import DiseaseChatbot
 from sentiment_analysis import SentimentAnalyser
 import os
+from diary_record import diary_record
+from explore_data import explore_record
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 app = Flask(__name__)
 
@@ -31,9 +35,25 @@ def get_answer():
         language = "English"
     answer = disease_chatbot.get_answer(question, language)
     return jsonify({'answer': answer})
-@app.route('/')
-def hello():
-    return "Hello World!"
+
+
+@app.route('/record', methods=['GET'])
+def get_record():
+    record = json.dumps(diary_record)
+    print(record)
+    return Response(record, mimetype='application/json')
+
+
+@app.route('/explore', methods=['GET'])
+def get_explore():
+    explore = json.dumps(explore_record)
+    print(explore)
+    return Response(explore, mimetype='application/json')
+
+
+# @app.route('/')
+# def hello():
+#     return "Hello World!"
 
 
 if __name__ == '__main__':

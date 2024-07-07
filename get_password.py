@@ -1,2 +1,2 @@
 def getpass():
-    return 'YOUR_OPENAI'
+    return 'Your_OpenAI_API_Key'
