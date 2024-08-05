@@ -1,4 +1,0 @@
-Flask~=3.0.3
-torch~=2.3.0+cu121
-transformers~=4.42.3
-langchain~=0.2.6
