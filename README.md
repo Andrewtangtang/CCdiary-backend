@@ -1,5 +1,6 @@
 # CC Diary Backend Documentation
-
+[![CC Diary Intro](https://raw.githubusercontent.com/SimonLiu423/cc_diary/ec4694b2518ead544a0f982be761f6c4276f51dd/presentation/ccDiary_intro.gif)](https://github.com/SimonLiu423/cc_diary/blob/61104e21db6f5a4cf7f9cfe8a971b073cdf62ecd/presentation/ccDiary.pdf)
+*Click on the GIF to view our full presentation PDF*
 ## Introduction
 The CC Diary backend provides the essential APIs to support the functionalities of the CC Diary app. It enables diary management, sentiment analysis, and chatbot responses, facilitating a seamless user experience focused on mental health and emotional well-being.
 
@@ -132,17 +133,31 @@ The server will be accessible at http://0.0.0.0:5000/.
 - Pytorch: Used for analyzing and generating feedback based on user diary entries.
 - Flutter: Utilized for building the frontend of the app.[frontend](https://github.com/SimonLiu423/cc_diary)
 
-## Display
-[Slides](ccDiary_afterProcessed..pdf)
+## License
+
+Copyright (c) 2024 vaclis. All rights reserved.
+
+This software and associated documentation files (the "Software") are the exclusive property of vaclis. The Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.
+
+Unauthorized copying, modification, distribution, or use of this Software, via any medium, is strictly prohibited without the express written permission of vaclis.
+
+For licensing inquiries, please contact: vacliscofounders@gmail.com
+
+## Contact
+
+Feel free to mail to us by vacliscofounders@gmail.com for collaboration or bugs report!
+
+- [@vaclisinc](https://www.github.com/vaclisinc)
+- [@SimonLiu423](https://www.github.com/SimonLiu423)
+- [@WavJaby](https://www.github.com/WavJaby)
+- [@Andrewtangtang](https://www.github.com/Andrewtangtang) 
+
+---
 
 
+Developed with ❤️ by 游松澤 (Yu Song-Ze), 張羿軒 (Zhang Yi-Xuan), 劉力瑋 (Liu Li-Wei), 張昀棠 (Zhang Yun-Tang)
 
-## Contributors
-- 張昀棠
-- 游松澤
-- 張羿軒
-- 劉力瑋
-
+Project Team: 不嘻嘻的時候，黑客松松澤
 
 
 
